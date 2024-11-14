@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      Filename: WeaponsList.html
+   -->
+   <meta charset="utf-8" />
+   <title>Swaps</title>
+   <link rel="stylesheet" href="style_ss.css" />
+   <link rel="stylesheet" href="style_c.css" />
+</head>
+    <body>
+	
+		<nav></nav>
+        <header id = main>
+            <div>
+                Day Of Year:
+            </div>
+			<div>
+                <input id="day_of_year" type="number" min="1" max="366" value = 1></input>
+            </div>
+            <div>
+                <button onclick="resetConfig();">Reset</button>
+            </div>
+            <div>
+                Races:
+            </div>
+            <div class="races-container">
+                <!--Populated with buttons by code-->
+            </div>
+        </header>
+        <table id = "main_table" class = "table">
+            <thead>
+                <tr>
+                    <th data-key="@fromList">Trade From</th>
+                    <th data-key="#icon"></th>
+                    <th class=sorter data-key="name">Name</th>
+                    <th data-key="@forList">Trade For</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script src="smallConstants.min.js"></script>
+        <script src="urlify.js"></script>
+        <script src="common.js"></script>
+        <script src="setupSwap.js"></script>
+        
+    </body>
+
+</html>
